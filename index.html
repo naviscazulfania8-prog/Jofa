@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Untuk Jofa ❤</title>
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ffc6da,#ffffff);
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.container{
+width:90%;
+max-width:600px;
+background:white;
+padding:35px;
+border-radius:25px;
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+text-align:center;
+}
+
+.slide{
+display:none;
+font-size:20px;
+color:#444;
+line-height:1.6;
+}
+
+.active{
+display:block;
+}
+
+h1,h2{
+color:#ff3b7a;
+}
+
+img{
+width:100%;
+max-height:420px;
+object-fit:cover;
+border-radius:18px;
+margin-top:15px;
+}
+
+video{
+width:100%;
+border-radius:18px;
+margin-top:15px;
+}
+
+button{
+margin-top:25px;
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:#ff3b7a;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="slide active">
+<h1>Hai Jofa 👋</h1>
+</div>
+
+<div class="slide">
+Hari ini bukan cuma hari biasa.
+</div>
+
+<div class="slide">
+Hari ini adalah hari dimana seseorang yang sangat berarti lahir ke dunia.
+</div>
+
+<div class="slide">
+<h2>15 Maret 2007 ,Sekarang kamu udah gede udah 18 tahunn yey🎂</h2>
+</div>
+
+<div class="slide">
+<h2>Selamat Ulang Tahun Mamas ❤<</h2>
+</div>
+
+<div class="slide">
+<img src="jofa2.jpg">
+<p>Aku suka foto ini, soalnya ada anak imut lainnya selain kamu.</p>
+</div>
+
+<div class="slide">
+<img src="jofa1.jpg">
+<p>Kamu kelihatan keren disini.</p>
+</div>
+
+<div class="slide">
+<img src="jofa3.jpg">
+<p>Dan foto ini kamu juga sangat tampan.</p>
+</div>
+
+<div class="slide">
+<h2>Memories kita 🎥</h2>
+<video controls>
+<source src="video1.mp4" type="video/mp4">
+</video>
+<p>Memories kita, hihi lucunya ❤</p>
+</div>
+
+<div class="slide">
+<h2>Video tentang kamu</h2>
+<video controls>
+<source src="video2.mp4" type="video/mp4">
+</video>
+<p>Video ini isinya kamu semua, hihihi sangat tampan ❤</p>
+</div>
+
+<div class="slide">
+Mungkin buat orang lain ini hanya ulang tahun biasa.
+</div>
+
+<div class="slide">
+Tapi buat aku... hari ini sangat berarti.
+</div>
+
+<div class="slide">
+Karena kalau kamu tidak lahir hari itu...
+</div>
+
+<div class="slide">
+Mungkin aku tidak akan pernah mengenal kamu.
+</div>
+
+<div class="slide">
+Dan kalau aku tidak mengenal kamu... hidup aku mungkin terasa jauh lebih sepi.
+</div>
+
+<div class="slide">
+<img src="stiker1.jpg">
+</div>
+
+
+<div class="slide">
+Kamu mungkin tidak sadar...
+</div>
+
+<div class="slide">
+Tapi kamu sangat berharga di hidup aku.
+</div>
+
+<div class="slide">
+<h2>Aku sayang sekali sama kamu ❤</h2>
+</div>
+
+<div class="slide">
+Tapi jujur ya... kadang aku juga agak cegil.
+</div>
+
+<div class="slide">
+Kalau kamu lama bales chat aku langsung mikir aneh.
+</div>
+
+<div class="slide">
+Ini orang lagi apa ya?
+</div>
+
+<div class="slide">
+Diculik alien 👽
+</div>
+
+<div class="slide">
+Jatuh ke sumur 🕳️
+</div>
+
+<div class="slide">
+Atau lagi tidur sambil peluk ayam 🐔
+</div>
+
+<div class="slide">
+Padahal biasanya kamu cuma lagi makan.
+</div>
+
+<div class="slide">
+Jadi maaf kalau aku kadang agak random.
+</div>
+
+<div class="slide">
+Tapi semua itu karena aku terlalu sayang sama kamu.
+</div>
+
+<div class="slide">
+<h1>Selamat Ulang Tahun 🎂</h1>
+</div>
+
+<div class="slide">
+Semoga kamu panjang umur.
+</div>
+
+<div class="slide">
+Semoga kamu sehat selalu.
+</div>
+
+<div class="slide">
+Semoga kamu selalu bahagia.
+</div>
+
+<div class="slide">
+<img src="stiker2.jpg">
+</div>
+
+<div class="slide">
+Aku buat semua ini supaya aku bisa ngucapin ke kamu kalau aku sangat sayang sama kamu,
+bahkan ketika aku lagi kecewa sekalipun.
+</div>
+
+<button onclick="next()">Lanjut ➜</button>
+
+</div>
+
+<script>
+
+let slideIndex = 0;
+
+function next(){
+
+let slides = document.getElementsByClassName("slide");
+
+slides[slideIndex].classList.remove("active");
+
+slideIndex++;
+
+if(slideIndex >= slides.length){
+slideIndex = slides.length - 1;
+}
+
+slides[slideIndex].classList.add("active");
+
+}
+
+</script>
+
+</body>
+</html>
